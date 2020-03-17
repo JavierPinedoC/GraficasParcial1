@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1583969866 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Punto.cpp
+	"Punto.h"
+
+1583969869 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Punto.h
+	<GL/glut.h>
+	<stdlib.h>
+
+1442889364 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/GLUT/include/GL/glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1584153475 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Linea.cpp
+	"Linea.h"
+
+1584151820 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Linea.h
+	"Punto.h"
+
+1584123265 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Triangulo.cpp
+	"Triangulo.h"
+
+1584151992 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Triangulo.h
+	"Linea.h"
+
+1584157331 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/main.cpp
+	<math.h>
+	"Linea.h"
+	"Triangulo.h"
+	"Cuadrado.h"
+	"Circulo.h"
+
+1584151932 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Cuadrado.h
+	"Linea.h"
+
+1584122706 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Cuadrado.cpp
+	"Cuadrado.h"
+
+1584123462 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Circulo.cpp
+	"Circulo.h"
+	<cmath>
+
+1584151800 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Circulo.h
+	"Linea.h"
+
+1584156772 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Matriz.cpp
+	"Matriz.h"
+
+1584156713 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Matriz.h
+	"Punto.h"
+
