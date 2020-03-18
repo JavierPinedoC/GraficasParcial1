@@ -1,5 +1,10 @@
+#ifndef PUNTO_H
+#define PUNTO_H
 #include <GL/glut.h>
 #include <stdlib.h>
+#include <cmath>
+#include <math.h>
+#include <stdio.h>
 
 /*
 EJEMPLO DE LA DECLARACION DE CLASES EN C++
@@ -21,3 +26,4 @@ public:
 	int *getValues();
 	void draw();
 };
+#endif

@@ -1,5 +1,5 @@
 #include "Circulo.h"
-#include <cmath>
+
 
 Circulo::Circulo() {}
 

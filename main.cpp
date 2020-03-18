@@ -33,7 +33,7 @@ void display()
     // p2.setValues(50,50);
     // p3.setValues(100,0);
     // tr.setValues(p1,p2,p3);
-    
+
     // tr.draw();
 
     Cuadrado cu;
@@ -41,11 +41,32 @@ void display()
     // p2.setValues(0, 100);
     // p3.setValues(100, 100);
     // p4.setValues(100,0);
-    cu.setValues(100,100);
+    cu.setValues(100, 100);
+    //cu.traslacion(50, -20);
+    cu.escala(2);
+    cu.rotation(10);
+    // cu.traslacion(50,50,0,0);
+    // cu.setValues(p1,p2,p3,p4);
+    // cu.traslacion(20,30);
     // glClear(GL_COLOR_BUFFER_BIT);
     // glLoadIdentity();
-    
+
     cu.draw();
+
+    Cuadrado cu2;
+    // p1.setValues(0, 0);
+    // p2.setValues(0, 100);
+    // p3.setValues(100, 100);
+    // p4.setValues(100,0);
+    // cu.setValues(p1,p2,p3,p4);
+    cu2.setValues(100, 100);
+    cu2.traslacion(-200, -200);
+    cu2.escala(2);
+    //cu2.rotation(240);
+    // glClear(GL_COLOR_BUFFER_BIT);
+    // glLoadIdentity();
+
+    cu2.draw();
 
     // Circulo ci;
     // ci.setValues(50,50);

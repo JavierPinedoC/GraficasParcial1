@@ -1,13 +1,24 @@
 #include "Matriz.h"
 
+
 Matriz::Matriz(int nFilas, int nCol)
 {
     this->nFilas = nFilas;
     this->nCol = nCol;
-    this->puntero_matriz = new int *[nFilas];
+    this->puntero_matriz = new double *[nFilas];
     for (int i = 0; i < nFilas; i++)
-        this->puntero_matriz[i] = new int[nCol];
+        this->puntero_matriz[i] = new double[nCol];
 }
+
+// Matriz::Matriz(int nFilas, int nCol)
+// {
+//     this->nFilas = nFilas;
+//     this->nCol = nCol;
+//     this->puntero_matrizf = new float *[nFilas];
+//     for (int i = 0; i < nFilas; i++)
+//         this->puntero_matrizf[i] = new float[nCol];
+// }
+
 Matriz::~Matriz()
 {
     for (int i = 0; i < nFilas; i++)
@@ -31,6 +42,11 @@ int Matriz::getValue(int f, int c)
 }
 
 void Matriz::setValue(int f, int c, int v)
+{
+    this->puntero_matriz[f][c] = v;
+}
+
+void Matriz::setValue(int f, int c, double v)
 {
     this->puntero_matriz[f][c] = v;
 }
