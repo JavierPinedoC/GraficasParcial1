@@ -20,14 +20,14 @@
 1584151820 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Linea.h
 	"Punto.h"
 
-1584670911 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Triangulo.cpp
+1584674368 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Triangulo.cpp
 	"Triangulo.h"
 
 1584670760 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Triangulo.h
 	"Linea.h"
 	"Matriz.h"
 
-1584670779 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/main.cpp
+1584675178 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/main.cpp
 	<math.h>
 	"Linea.h"
 	"Triangulo.h"
@@ -38,14 +38,15 @@
 	"Linea.h"
 	"Matriz.h"
 
-1584667889 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Cuadrado.cpp
+1584671180 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Cuadrado.cpp
 	"Cuadrado.h"
 
-1584510511 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Circulo.cpp
+1584676640 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Circulo.cpp
 	"Circulo.h"
 
-1584510507 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Circulo.h
+1584673532 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Circulo.h
 	"Linea.h"
+	"Matriz.h"
 
 1584513759 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Matriz.cpp
 	"Matriz.h"

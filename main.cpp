@@ -82,10 +82,40 @@ void display()
     // cu2.draw();
 
     Circulo ci;
-    ci.setValues(80,50);
+    ci.setValues(360, 50);
+    //ci.traslacion(50, 50);
+    //ci.escala(1.5);
+    ci.rotation(90);
     // glClear(GL_COLOR_BUFFER_BIT);
     // glLoadIdentity();
     ci.draw();
+
+    // Circulo ci2;
+    // ci2.setValues(360, 50);
+    //  ci2.rotation(-90);
+    //ci2.traslacion(50,50);
+    //ci2.escala(1.5);
+    // glClear(GL_COLOR_BUFFER_BIT);
+    // glLoadIdentity();
+    // ci2.draw();
+
+    // Circulo ci3;
+    // ci3.setValues(360, 50);
+    // ci3.rotation(180);
+    //ci3.traslacion(50,50);
+    //ci3.escala(1.5);
+    // glClear(GL_COLOR_BUFFER_BIT);
+    // glLoadIdentity();
+    // ci3.draw();
+
+    // Circulo ci4;
+    // ci4.setValues(360, 50);
+    // ci4.rotation(0);
+    //ci3.traslacion(50,50);
+    //ci3.escala(1.5);
+    // glClear(GL_COLOR_BUFFER_BIT);
+    // glLoadIdentity();
+    // ci4.draw();
 
     glFlush();
 }

@@ -4,18 +4,18 @@ Triangulo::Triangulo() {}
 
 Triangulo::~Triangulo() {}
 
-void print_matrix(Matriz *m)
-{
-    for (int i = 0; i < m->getnFilas(); i++)
-    {
-        for (int j = 0; j < m->getnCol(); j++)
-        {
-            printf("%d ", m->getValue(i, j));
-        }
+// void print_matrix(Matriz *m)
+// {
+//     for (int i = 0; i < m->getnFilas(); i++)
+//     {
+//         for (int j = 0; j < m->getnCol(); j++)
+//         {
+//             printf("%d ", m->getValue(i, j));
+//         }
 
-        printf("\n");
-    }
-}
+//         printf("\n");
+//     }
+// }
 
 void Triangulo::setValues(int x1, int y1, int x2, int y2, int x3, int y3)
 {
