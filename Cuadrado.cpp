@@ -4,18 +4,18 @@ Cuadrado::Cuadrado(){}
 
 Cuadrado::~Cuadrado() {}
 
-void print_matrix(Matriz *m)
-{
-    for (int i = 0; i < m->getnFilas(); i++)
-    {
-        for (int j = 0; j < m->getnCol(); j++)
-        {
-            printf("%d ", m->getValue(i, j));
-        }
+// void print_matrix(Matriz *m)
+// {
+//     for (int i = 0; i < m->getnFilas(); i++)
+//     {
+//         for (int j = 0; j < m->getnCol(); j++)
+//         {
+//             printf("%d ", m->getValue(i, j));
+//         }
 
-        printf("\n");
-    }
-}
+//         printf("\n");
+//     }
+// }
 
 void Cuadrado::setValues(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4)
 {
@@ -55,7 +55,7 @@ void Cuadrado::setValues(int x1, int y1)
                 if (i == 0)
                     b->setValue(i, j, p1.getX());
                 else if (i == 1)
-                    b->setValue(i, j, p2.getY());
+                    b->setValue(i, j, p1.getY());
                 else
                     b->setValue(i, j, 1);
             }

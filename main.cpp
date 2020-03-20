@@ -28,51 +28,64 @@ void display()
     // milinea.draw();
 
     // Triangulo tr;
-    // // tr.setValues(0,0,50,50,100,0);
-    // p1.setValues(0,0);
-    // p2.setValues(50,50);
-    // p3.setValues(100,0);
-    // tr.setValues(p1,p2,p3);
+    // tr.setValues(0,0,50,50,100,0);
+    // p1.setValues(0, 0);
+    // p2.setValues(50, 50);
+    // p3.setValues(100, 0);
+    // tr.setValues(p1, p2, p3);
+    // tr.traslacion(50, 0);
+    // tr.escala(2);
+    // tr.rotation(5);
 
     // tr.draw();
 
-    Cuadrado cu;
+    // Triangulo tr2;
+    // tr.setValues(0,0,50,50,100,0);
+    // p1.setValues(0, 0);
+    // p2.setValues(50, 50);
+    // p3.setValues(100, 0);
+    // tr2.setValues(p1, p2, p3);
+    //tr2.traslacion(2,3);
+
+    // tr2.draw();
+
+    // Cuadrado cu;
     // p1.setValues(0, 0);
     // p2.setValues(0, 100);
     // p3.setValues(100, 100);
     // p4.setValues(100,0);
-    cu.setValues(100, 100);
+    // cu.setValues(100, 100);
     //cu.traslacion(50, -20);
-    cu.escala(2);
-    cu.rotation(10);
+    // cu.escala(2);
+    // cu.rotation(10);
     // cu.traslacion(50,50,0,0);
     // cu.setValues(p1,p2,p3,p4);
     // cu.traslacion(20,30);
     // glClear(GL_COLOR_BUFFER_BIT);
     // glLoadIdentity();
 
-    cu.draw();
+    // cu.draw();
 
-    Cuadrado cu2;
+    // Cuadrado cu2;
     // p1.setValues(0, 0);
     // p2.setValues(0, 100);
     // p3.setValues(100, 100);
     // p4.setValues(100,0);
     // cu.setValues(p1,p2,p3,p4);
-    cu2.setValues(100, 100);
-    cu2.traslacion(-200, -200);
-    cu2.escala(2);
+    // cu2.setValues(100, 100);
+    // cu2.traslacion(-200, -200);
+    // cu2.escala(2);
     //cu2.rotation(240);
     // glClear(GL_COLOR_BUFFER_BIT);
     // glLoadIdentity();
 
-    cu2.draw();
+    // cu2.draw();
 
-    // Circulo ci;
-    // ci.setValues(50,50);
-    // // glClear(GL_COLOR_BUFFER_BIT);
-    // // glLoadIdentity();
-    // ci.draw();
+    Circulo ci;
+    ci.setValues(80,50);
+    // glClear(GL_COLOR_BUFFER_BIT);
+    // glLoadIdentity();
+    ci.draw();
 
     glFlush();
 }
