@@ -22,6 +22,7 @@ public:
 	void escala(double);
 	void rotation(int);
 	void iniciarM();
+	Matriz *matriz();
 	void draw();
 };
 #endif

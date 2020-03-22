@@ -11,19 +11,6 @@ void Circulo::setValues(int x1, int y1)
     Circulo::iniciarM();
 }
 
-void print_matrix(Matriz *m)
-{
-    for (int i = 0; i < m->getnFilas(); i++)
-    {
-        for (int j = 0; j < m->getnCol(); j++)
-        {
-            printf("%d ", m->getValue(i, j));
-        }
-
-        printf("\n");
-    }
-}
-
 void Circulo::iniciarM()
 {
     int xp = 0;
@@ -48,10 +35,6 @@ void Circulo::iniciarM()
                 b->setValue(i, j, 1);
         }
     }
-
-    printf("B Principal\n");
-    print_matrix(b);
-    printf("\n");
 }
 
 void Circulo::traslacion(double dx, double dy)
@@ -218,6 +201,11 @@ void Circulo::rotation(int g)
     // printf("\n");
     // print_matrix(b);
     // printf("\n");
+}
+
+Matriz *Circulo::matriz()
+{
+    return b;
 }
 
 void Circulo::draw()

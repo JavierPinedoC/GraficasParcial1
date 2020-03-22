@@ -4,25 +4,25 @@ Triangulo::Triangulo() {}
 
 Triangulo::~Triangulo() {}
 
-// void print_matrix(Matriz *m)
-// {
-//     for (int i = 0; i < m->getnFilas(); i++)
-//     {
-//         for (int j = 0; j < m->getnCol(); j++)
-//         {
-//             printf("%d ", m->getValue(i, j));
-//         }
+void Triangulo::print_matrix(Matriz *m)
+{
+    for (int i = 0; i < m->getnFilas(); i++)
+    {
+        for (int j = 0; j < m->getnCol(); j++)
+        {
+            printf("%d ", m->getValue(i, j));
+        }
 
-//         printf("\n");
-//     }
-// }
+        printf("\n");
+    }
+}
+
 
 void Triangulo::setValues(int x1, int y1, int x2, int y2, int x3, int y3)
 {
     l1.setValues(x1, y1, x2, y2);
     l2.setValues(x2, y2, x3, y3);
     l3.setValues(x3, y3, x1, y1);
-    // Triangulo::iniciarM(p1, p2, p3);
 }
 
 void Triangulo::setValues(Punto p1, Punto p2, Punto p3)
@@ -32,8 +32,6 @@ void Triangulo::setValues(Punto p1, Punto p2, Punto p3)
     l3.setValues(p3, p1);
 
     Triangulo::iniciarM(p1, p2, p3);
-    // print_matrix(b);
-    // printf("\n");
 }
 
 void Triangulo::iniciarM(Punto p1, Punto p2, Punto p3)
@@ -89,16 +87,8 @@ void Triangulo::traslacion(double dx, double dy)
                 a->setValue(i, j, 0);
         }
     }
-    // printf("\n");
-    // print_matrix(a);
-    // printf("\nTraslacion b normal\n");
-    // print_matrix(b);
-
+   
     b = a->multiplicar(b);
-    // printf("\n");
-    // printf("\n b multiplicada\n");
-    // print_matrix(b);
-    //b = c;
 
     Triangulo::setValues(
         b->getValue(0, 0), b->getValue(1, 0),
@@ -108,13 +98,8 @@ void Triangulo::traslacion(double dx, double dy)
 
 void Triangulo::escala(double dx)
 {
-    // printf("\n");
-    // print_matrix(b);
     int x0 = b->getValue(0, 0);
     int y0 = b->getValue(1, 0);
-    // printf("\n");
-    // printf("%d",x0);
-    // printf("%d",y0);
 
     Triangulo::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
 
@@ -140,29 +125,10 @@ void Triangulo::escala(double dx)
             }
         }
     }
-    // printf("\n");
-    // print_matrix(a);
-    // printf("\n");
-
-    // printf("Escalamiento antes de \n");
-
-    // print_matrix(b);
-    // printf("\n");
-    // print_matrix(a);
-    // printf("\n");
 
     b = a->multiplicar(b);
-    // printf("matriz b con escalamiento: \n");
-    // printf("\n");
-    // print_matrix(b);
-    // printf("\n");
 
     Triangulo::traslacion(x0, y0);
-
-    //   printf("matriz b final: \n");
-    // printf("\n");
-    // print_matrix(b);
-    // printf("\n");
 
     Triangulo::setValues(
         b->getValue(0, 0), b->getValue(1, 0),
@@ -203,35 +169,20 @@ void Triangulo::rotation(int g)
             }
         }
     }
-    // printf("\n");
-    // printf("Rotacion\n");
-    // print_matrix(a);
-    // printf("\n");
-
-    // printf("Escalamiento antes de \n");
-
-    // print_matrix(b);
-    // printf("\n");
-    // print_matrix(a);
-    // printf("\n");
 
     b = a->multiplicar(b);
-    // printf("matriz b con escalamiento: \n");
-    // printf("\n");
-    // print_matrix(b);
-    // printf("\n");
 
     Triangulo::traslacion(x0, y0);
-
-    //   printf("matriz b final: \n");
-    // printf("\n");
-    // print_matrix(b);
-    // printf("\n");
 
     Triangulo::setValues(
         b->getValue(0, 0), b->getValue(1, 0),
         b->getValue(0, 1), b->getValue(1, 1),
         b->getValue(0, 2), b->getValue(1, 2));
+}
+
+Matriz *Triangulo::matriz()
+{
+    return b;
 }
 
 void Triangulo::draw()

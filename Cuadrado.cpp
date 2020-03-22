@@ -249,6 +249,11 @@ void Cuadrado::rotation(int g)
         b->getValue(0, 3), b->getValue(1, 3));
 }
 
+Matriz *Cuadrado::matriz()
+{
+    return b;
+}
+
 void Cuadrado::draw()
 {
     l1.draw();

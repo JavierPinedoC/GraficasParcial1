@@ -25,6 +25,7 @@ public:
 	void traslacion(double, double);
 	void escala(double);
 	void rotation(int);
+	Matriz *matriz();
 	void draw();
 };
 #endif
