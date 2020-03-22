@@ -1,5 +1,21 @@
 # depslib dependency file v1.0
-1583969866 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Punto.cpp
+1584890010 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Arbol.cpp
+	"Arbol.h"
+
+1584887648 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Arbol.h
+	"Matriz.h"
+	"Cuadrado.h"
+	"Triangulo.h"
+	"Matriz.h"
+
+1584513788 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Matriz.h
+	<stdlib.h>
+
+1584847658 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Cuadrado.h
+	"Linea.h"
+	"Matriz.h"
+
+1584151820 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Linea.h
 	"Punto.h"
 
 1584510531 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Punto.h
@@ -14,43 +30,58 @@
 	<GL/gl.h>
 	<GL/glu.h>
 
+1584888542 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Triangulo.h
+	"Linea.h"
+	"Matriz.h"
+
+1584888296 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Circulo.cpp
+	"Circulo.h"
+
+1584888330 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Circulo.h
+	"Linea.h"
+	"Matriz.h"
+
+1584847671 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Cuadrado.cpp
+	"Cuadrado.h"
+
+1584907170 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Escenario.cpp
+	"Escenario.h"
+
+1584907118 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Escenario.h
+	"Triangulo.h"
+	"Cuadrado.h"
+	"Circulo.h"
+	"Arbol.h"
+	"Sol.h"
+	"Casa.h"
+
 1584153475 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Linea.cpp
 	"Linea.h"
 
-1584151820 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Linea.h
-	"Punto.h"
-
-1584674368 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Triangulo.cpp
-	"Triangulo.h"
-
-1584670760 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Triangulo.h
-	"Linea.h"
-	"Matriz.h"
-
-1584675178 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/main.cpp
-	<math.h>
-	"Linea.h"
-	"Triangulo.h"
-	"Cuadrado.h"
-	"Circulo.h"
-
-1584514863 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Cuadrado.h
-	"Linea.h"
-	"Matriz.h"
-
-1584671180 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Cuadrado.cpp
-	"Cuadrado.h"
-
-1584676640 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Circulo.cpp
-	"Circulo.h"
-
-1584673532 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Circulo.h
-	"Linea.h"
-	"Matriz.h"
+1584889285 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/main.cpp
+	"Escenario.h"
 
 1584513759 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Matriz.cpp
 	"Matriz.h"
 
-1584513788 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Matriz.h
-	<stdlib.h>
+1583969866 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Punto.cpp
+	"Punto.h"
+
+1584888547 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Triangulo.cpp
+	"Triangulo.h"
+
+1584903434 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Sol.h
+	"Circulo.h"
+	"Triangulo.h"
+
+1584905665 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Sol.cpp
+	"Sol.h"
+
+1584906972 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Casa.h
+	"Circulo.h"
+	"Triangulo.h"
+	"Cuadrado.h"
+
+1584907638 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Casa.cpp
+	"Casa.h"
 

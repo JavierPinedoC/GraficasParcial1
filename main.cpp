@@ -1,23 +1,29 @@
-#include <math.h>
-#include "Linea.h"
-#include "Triangulo.h"
-#include "Cuadrado.h"
-#include "Circulo.h"
+// #include <math.h>
+// #include "Linea.h"
+// #include "Triangulo.h"
+// #include "Cuadrado.h"
+// #include "Circulo.h"
+#include "Escenario.h"
+
+Escenario es;
 
 void reshape(int width, int height)
 {
     glViewport(0, 0, width, height);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluOrtho2D(-320, 320, -240, 240);
+    gluOrtho2D(-720, 720, -480, 480);
     glMatrixMode(GL_MODELVIEW);
 }
 
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);
-    glLoadIdentity();
-    Punto p1, p2, p3, p4;
+    glLoadIdentity;
+
+    es.setValue();
+
+    //Punto p1, p2, p3, p4;
     // Linea milinea;
     // mipunto.setValues(30, 50);
     // milinea.setValues(0, 0, 40, 50);
@@ -81,14 +87,14 @@ void display()
 
     // cu2.draw();
 
-    Circulo ci;
-    ci.setValues(360, 50);
+    //Circulo ci;
+    //ci.setValues(360, 50);
     //ci.traslacion(50, 50);
     //ci.escala(1.5);
-    ci.rotation(90);
+    //ci.rotation(0);
     // glClear(GL_COLOR_BUFFER_BIT);
     // glLoadIdentity();
-    ci.draw();
+    //ci.draw();
 
     // Circulo ci2;
     // ci2.setValues(360, 50);
@@ -123,6 +129,7 @@ void display()
 void init()
 {
     glClearColor(0, 0, 0, 0);
+    es;
 }
 
 int main(int argc, char *argv[])
@@ -130,8 +137,8 @@ int main(int argc, char *argv[])
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
     glutInitWindowPosition(50, 50);
-    glutInitWindowSize(640, 480);
-    glutCreateWindow("Manejo Clases");
+    glutInitWindowSize(720, 480);
+    glutCreateWindow("Parcial_1");
     init();
     //funcion que se llama para dibujar los objetos en pantalla
     glutDisplayFunc(display);
