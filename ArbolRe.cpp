@@ -1,36 +1,48 @@
-#include "Casa.h"
+#include "ArbolRe.h"
 
-Casa::Casa() {}
+ArbolRe::ArbolRe(){}
 
-Casa::~Casa() {}
+ArbolRe::~ArbolRe(){}
 
-void Casa::casa()
+void ArbolRe::arbolre()
 {
-    cu1.setValues(200, 250);
-    cu1.traslacion(0, -480);
+    cu1.setValues(100, 250);
     b = cu1.matriz();
 
-    cu2.setValues(50, 100);
-    cu2.traslacion(100, -480);
-    c = cu2.matriz();
+    c1.setValues(80, 40);
+    c1.traslacion(50,320);
+    c = c1.matriz();
+    ArbolRe::juntar(b, c);
 
-    Casa::juntar(b, c);
+    c2.setValues(80, 35);
+    c2.traslacion(50,320);
+    c = c2.matriz();
+    ArbolRe::juntar(b, c);
 
-    p1.setValues(-50, -230);
-    p2.setValues(100, -50);
-    p3.setValues(250, -230);
-    t1.setValues(p1, p2, p3);
-    c= t1.matriz();
-    Casa::juntar(b, c);
+    c3.setValues(80, 30);
+    c3.traslacion(50,320);
+    c = c3.matriz();
+    ArbolRe::juntar(b, c);
 
-    cu3.setValues(50,50);
-    cu3.traslacion(130,-310);
-    c = cu3.matriz();
-    Casa::juntar(b,c);
+    c4.setValues(80, 25);
+    c4.traslacion(50,320);
+    c = c4.matriz();
+    ArbolRe::juntar(b, c);
+
+    c5.setValues(80, 20);
+    c5.traslacion(50,320);
+    c = c5.matriz();
+    ArbolRe::juntar(b, c);
+
+    c6.setValues(80, 15);
+    c6.traslacion(50,320);
+    c = c6.matriz();
+    ArbolRe::juntar(b, c);
+
 
 }
 
-void Casa::juntar(Matriz *m, Matriz *c)
+void ArbolRe::juntar(Matriz *m, Matriz *c)
 {
     int contX = 0, contY = 0;
     int z = m->getnCol() + c->getnCol() + 2;
@@ -63,7 +75,7 @@ void Casa::juntar(Matriz *m, Matriz *c)
     }
 }
 
-void Casa::print_matrix(Matriz *m)
+void ArbolRe::print_matrix(Matriz *m)
 {
     for (int i = 0; i < m->getnFilas(); i++)
     {
@@ -76,7 +88,7 @@ void Casa::print_matrix(Matriz *m)
     }
 }
 
-void Casa::traslacion(double dx, double dy)
+void ArbolRe::traslacion(double dx, double dy)
 {
     for (int i = 0; i < a->getnFilas(); i++)
     {
@@ -94,15 +106,15 @@ void Casa::traslacion(double dx, double dy)
     }
     b = a->multiplicar(b);
 
-    // Casa::draw();
+    // ArbolRe::draw();
 }
 
-void Casa::escala(double dx)
+void ArbolRe::escala(double dx)
 {
     int x0 = b->getValue(0, 0);
     int y0 = b->getValue(1, 0);
 
-    Casa::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
+    ArbolRe::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
 
     for (int i = 0; i < a->getnFilas(); i++)
     {
@@ -129,17 +141,17 @@ void Casa::escala(double dx)
 
     b = a->multiplicar(b);
 
-    Casa::traslacion(x0, y0);
+    ArbolRe::traslacion(x0, y0);
 
-    //Casa::draw();
+    //ArbolRe::draw();
 }
 
-void Casa::rotation(int g)
+void ArbolRe::rotation(int g)
 {
     int x0 = b->getValue(0, 0);
     int y0 = b->getValue(1, 0);
 
-    Casa::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
+    ArbolRe::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
 
     for (int i = 0; i < a->getnFilas(); i++)
     {
@@ -170,10 +182,10 @@ void Casa::rotation(int g)
 
     b = a->multiplicar(b);
 
-    Casa::traslacion(x0, y0);
+    ArbolRe::traslacion(x0, y0);
 }
 
-void Casa::draw()
+void ArbolRe::draw()
 {
 
     int xip;

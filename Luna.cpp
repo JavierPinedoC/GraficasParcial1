@@ -1,36 +1,23 @@
-#include "Casa.h"
+#include "Luna.h"
 
-Casa::Casa() {}
+Luna::Luna() {}
 
-Casa::~Casa() {}
+Luna::~Luna() {}
 
-void Casa::casa()
+void Luna::luna()
 {
-    cu1.setValues(200, 250);
-    cu1.traslacion(0, -480);
-    b = cu1.matriz();
+    c1.setValues(360, 40);
+    b = c1.matriz();
 
-    cu2.setValues(50, 100);
-    cu2.traslacion(100, -480);
-    c = cu2.matriz();
-
-    Casa::juntar(b, c);
-
-    p1.setValues(-50, -230);
-    p2.setValues(100, -50);
-    p3.setValues(250, -230);
-    t1.setValues(p1, p2, p3);
-    c= t1.matriz();
-    Casa::juntar(b, c);
-
-    cu3.setValues(50,50);
-    cu3.traslacion(130,-310);
-    c = cu3.matriz();
-    Casa::juntar(b,c);
-
+    for (int i = 0; i < 40; i++)
+    {
+        c1.setValues(360, 40-i);
+        c = c1.matriz();
+        Luna::juntar(b,c);
+    }
 }
 
-void Casa::juntar(Matriz *m, Matriz *c)
+void Luna::juntar(Matriz *m, Matriz *c)
 {
     int contX = 0, contY = 0;
     int z = m->getnCol() + c->getnCol() + 2;
@@ -63,7 +50,7 @@ void Casa::juntar(Matriz *m, Matriz *c)
     }
 }
 
-void Casa::print_matrix(Matriz *m)
+void Luna::print_matrix(Matriz *m)
 {
     for (int i = 0; i < m->getnFilas(); i++)
     {
@@ -76,7 +63,7 @@ void Casa::print_matrix(Matriz *m)
     }
 }
 
-void Casa::traslacion(double dx, double dy)
+void Luna::traslacion(double dx, double dy)
 {
     for (int i = 0; i < a->getnFilas(); i++)
     {
@@ -94,15 +81,15 @@ void Casa::traslacion(double dx, double dy)
     }
     b = a->multiplicar(b);
 
-    // Casa::draw();
+    // Luna::draw();
 }
 
-void Casa::escala(double dx)
+void Luna::escala(double dx)
 {
     int x0 = b->getValue(0, 0);
     int y0 = b->getValue(1, 0);
 
-    Casa::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
+    Luna::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
 
     for (int i = 0; i < a->getnFilas(); i++)
     {
@@ -129,17 +116,17 @@ void Casa::escala(double dx)
 
     b = a->multiplicar(b);
 
-    Casa::traslacion(x0, y0);
+    Luna::traslacion(x0, y0);
 
-    //Casa::draw();
+    //Luna::draw();
 }
 
-void Casa::rotation(int g)
+void Luna::rotation(int g)
 {
     int x0 = b->getValue(0, 0);
     int y0 = b->getValue(1, 0);
 
-    Casa::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
+    Luna::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
 
     for (int i = 0; i < a->getnFilas(); i++)
     {
@@ -170,10 +157,10 @@ void Casa::rotation(int g)
 
     b = a->multiplicar(b);
 
-    Casa::traslacion(x0, y0);
+    Luna::traslacion(x0, y0);
 }
 
-void Casa::draw()
+void Luna::draw()
 {
 
     int xip;
