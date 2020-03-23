@@ -44,22 +44,27 @@
 1584847671 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Cuadrado.cpp
 	"Cuadrado.h"
 
-1584907170 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Escenario.cpp
+1584935934 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Escenario.cpp
 	"Escenario.h"
 
-1584907118 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Escenario.h
+1584934483 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Escenario.h
 	"Triangulo.h"
 	"Cuadrado.h"
 	"Circulo.h"
 	"Arbol.h"
 	"Sol.h"
 	"Casa.h"
+	"ArbolRe.h"
+	"Luna.h"
+	"Llanta.h"
+	"Nube.h"
 
 1584153475 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Linea.cpp
 	"Linea.h"
 
-1584889285 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/main.cpp
+1584941902 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/main.cpp
 	"Escenario.h"
+	<unistd.h>
 
 1584513759 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Matriz.cpp
 	"Matriz.h"
@@ -74,14 +79,40 @@
 	"Circulo.h"
 	"Triangulo.h"
 
-1584905665 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Sol.cpp
+1584936114 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Sol.cpp
 	"Sol.h"
 
-1584906972 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Casa.h
+1584919235 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Casa.h
 	"Circulo.h"
 	"Triangulo.h"
 	"Cuadrado.h"
 
-1584907638 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Casa.cpp
+1584919493 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Casa.cpp
 	"Casa.h"
+
+1584921503 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/ArbolRe.h
+	"Circulo.h"
+	"Triangulo.h"
+	"Cuadrado.h"
+
+1584921590 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/ArbolRe.cpp
+	"ArbolRe.h"
+
+1584922896 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Luna.h
+	"Circulo.h"
+
+1584923172 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Luna.cpp
+	"Luna.h"
+
+1584923883 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Llanta.h
+	"Circulo.h"
+
+1584924286 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Llanta.cpp
+	"Llanta.h"
+
+1584934302 /home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Nube.h
+	"Circulo.h"
+
+1584935248 source:/home/javipc/Documents/A-Tec/7mo.Sem/Graficas/Parcial1/Nube.cpp
+	"Nube.h"
 
