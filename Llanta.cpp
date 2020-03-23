@@ -1,39 +1,20 @@
-#include "Sol.h"
+#include "Llanta.h"
 
-Sol::Sol() {}
+Llanta::Llanta() {}
 
-Sol::~Sol() {}
+Llanta::~Llanta() {}
 
-void Sol::sol()
+void Llanta::llanta()
 {
     c1.setValues(360, 30);
     b = c1.matriz();
 
-    p1.setValues(-50, 120);
-    p2.setValues(0, 200);
-    p3.setValues(50, 120);
-    t1.setValues(p1, p2, p3);
-    c = t1.matriz();
-
-    Sol::juntar(b, c);
-
-    t1.traslacion(160, -70);
-    t1.rotation(270);
-    c = t1.matriz();
-    Sol::juntar(b, c);
-
-    t1.traslacion(-220, -100);
-    t1.rotation(180);
-    c = t1.matriz();
-    Sol::juntar(b, c);
-
-    t1.traslacion(160, -60);
-    t1.rotation(90);
-    c = t1.matriz();
-    Sol::juntar(b, c);
+    c2.setValues(360, 20);
+    c = c2.matriz();
+    Llanta::juntar(b, c);
 }
 
-void Sol::juntar(Matriz *m, Matriz *c)
+void Llanta::juntar(Matriz *m, Matriz *c)
 {
     int contX = 0, contY = 0;
     int z = m->getnCol() + c->getnCol() + 2;
@@ -66,7 +47,7 @@ void Sol::juntar(Matriz *m, Matriz *c)
     }
 }
 
-void Sol::print_matrix(Matriz *m)
+void Llanta::print_matrix(Matriz *m)
 {
     for (int i = 0; i < m->getnFilas(); i++)
     {
@@ -79,7 +60,7 @@ void Sol::print_matrix(Matriz *m)
     }
 }
 
-void Sol::traslacion(double dx, double dy)
+void Llanta::traslacion(double dx, double dy)
 {
     for (int i = 0; i < a->getnFilas(); i++)
     {
@@ -97,15 +78,15 @@ void Sol::traslacion(double dx, double dy)
     }
     b = a->multiplicar(b);
 
-    // Sol::draw();
+    // Llanta::draw();
 }
 
-void Sol::escala(double dx)
+void Llanta::escala(double dx)
 {
     int x0 = b->getValue(0, 0);
     int y0 = b->getValue(1, 0);
 
-    Sol::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
+    Llanta::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
 
     for (int i = 0; i < a->getnFilas(); i++)
     {
@@ -132,17 +113,17 @@ void Sol::escala(double dx)
 
     b = a->multiplicar(b);
 
-    Sol::traslacion(x0, y0);
+    Llanta::traslacion(x0, y0);
 
-    //Sol::draw();
+    //Llanta::draw();
 }
 
-void Sol::rotation(int g)
+void Llanta::rotation(int g)
 {
     int x0 = b->getValue(0, 0);
     int y0 = b->getValue(1, 0);
 
-    Sol::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
+    Llanta::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
 
     for (int i = 0; i < a->getnFilas(); i++)
     {
@@ -173,10 +154,10 @@ void Sol::rotation(int g)
 
     b = a->multiplicar(b);
 
-    Sol::traslacion(x0, y0);
+    Llanta::traslacion(x0, y0);
 }
 
-void Sol::draw()
+void Llanta::draw()
 {
 
     int xip;

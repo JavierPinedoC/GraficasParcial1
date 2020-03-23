@@ -1,39 +1,46 @@
-#include "Sol.h"
+#include "Nube.h"
 
-Sol::Sol() {}
+Nube::Nube(){}
 
-Sol::~Sol() {}
+Nube::~Nube(){}
 
-void Sol::sol()
+void Nube::nube()
 {
-    c1.setValues(360, 30);
+    c1.setValues(360, 15);
     b = c1.matriz();
 
-    p1.setValues(-50, 120);
-    p2.setValues(0, 200);
-    p3.setValues(50, 120);
-    t1.setValues(p1, p2, p3);
-    c = t1.matriz();
+    c2.setValues(360, 15);
+    c2.traslacion(80,0);
+    c2.rotation(-30);
+    c = c2.matriz();
+    Nube::juntar(b, c);
 
-    Sol::juntar(b, c);
+    c3.setValues(360, 15);
+    c3.traslacion(-95,0);
+    c3.rotation(30);
+    c = c3.matriz();
+    Nube::juntar(b, c);
 
-    t1.traslacion(160, -70);
-    t1.rotation(270);
-    c = t1.matriz();
-    Sol::juntar(b, c);
+    c4.setValues(360, 10);
+    c4.traslacion(55,-40);
+    c4.rotation(30);
+    c = c4.matriz();
+    Nube::juntar(b, c);
 
-    t1.traslacion(-220, -100);
-    t1.rotation(180);
-    c = t1.matriz();
-    Sol::juntar(b, c);
+    c4.setValues(360, 10);
+    c4.traslacion(-30,-60);
+    c4.rotation(30);
+    c = c4.matriz();
+    Nube::juntar(b, c);
 
-    t1.traslacion(160, -60);
-    t1.rotation(90);
-    c = t1.matriz();
-    Sol::juntar(b, c);
+    c5.setValues(360, 7);
+    c5.traslacion(-85,-80);
+    c5.rotation(30);
+    c = c5.matriz();
+    Nube::juntar(b, c);
 }
 
-void Sol::juntar(Matriz *m, Matriz *c)
+void Nube::juntar(Matriz *m, Matriz *c)
 {
     int contX = 0, contY = 0;
     int z = m->getnCol() + c->getnCol() + 2;
@@ -66,7 +73,7 @@ void Sol::juntar(Matriz *m, Matriz *c)
     }
 }
 
-void Sol::print_matrix(Matriz *m)
+void Nube::print_matrix(Matriz *m)
 {
     for (int i = 0; i < m->getnFilas(); i++)
     {
@@ -79,7 +86,7 @@ void Sol::print_matrix(Matriz *m)
     }
 }
 
-void Sol::traslacion(double dx, double dy)
+void Nube::traslacion(double dx, double dy)
 {
     for (int i = 0; i < a->getnFilas(); i++)
     {
@@ -97,15 +104,15 @@ void Sol::traslacion(double dx, double dy)
     }
     b = a->multiplicar(b);
 
-    // Sol::draw();
+    // Nube::draw();
 }
 
-void Sol::escala(double dx)
+void Nube::escala(double dx)
 {
     int x0 = b->getValue(0, 0);
     int y0 = b->getValue(1, 0);
 
-    Sol::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
+    Nube::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
 
     for (int i = 0; i < a->getnFilas(); i++)
     {
@@ -132,17 +139,17 @@ void Sol::escala(double dx)
 
     b = a->multiplicar(b);
 
-    Sol::traslacion(x0, y0);
+    Nube::traslacion(x0, y0);
 
-    //Sol::draw();
+    //Nube::draw();
 }
 
-void Sol::rotation(int g)
+void Nube::rotation(int g)
 {
     int x0 = b->getValue(0, 0);
     int y0 = b->getValue(1, 0);
 
-    Sol::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
+    Nube::traslacion(-b->getValue(0, 0), -b->getValue(1, 0));
 
     for (int i = 0; i < a->getnFilas(); i++)
     {
@@ -173,10 +180,10 @@ void Sol::rotation(int g)
 
     b = a->multiplicar(b);
 
-    Sol::traslacion(x0, y0);
+    Nube::traslacion(x0, y0);
 }
 
-void Sol::draw()
+void Nube::draw()
 {
 
     int xip;
